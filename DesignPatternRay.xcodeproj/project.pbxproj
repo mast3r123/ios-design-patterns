@@ -17,6 +17,8 @@
 		AFDB69D928D11EEC009D5CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDB69D828D11EEC009D5CFE /* Assets.xcassets */; };
 		AFDB69DB28D11F93009D5CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDB69DA28D11F93009D5CFE /* LaunchScreen.storyboard */; };
 		AFDB69DD28D121A0009D5CFE /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69DC28D121A0009D5CFE /* QuestionView.swift */; };
+		AFDB69DF28D2697F009D5CFE /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69DE28D2697F009D5CFE /* SelectQuestionGroupViewController.swift */; };
+		AFDB69E128D26BC2009D5CFE /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69E028D26BC2009D5CFE /* QuestionGroupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		AFDB69D828D11EEC009D5CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFDB69DA28D11F93009D5CFE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFDB69DC28D121A0009D5CFE /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		AFDB69DE28D2697F009D5CFE /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
+		AFDB69E028D26BC2009D5CFE /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				AFDB69DA28D11F93009D5CFE /* LaunchScreen.storyboard */,
 				AFDB69BF28D11BD9009D5CFE /* Main.storyboard */,
 				AFDB69DC28D121A0009D5CFE /* QuestionView.swift */,
+				AFDB69E028D26BC2009D5CFE /* QuestionGroupCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				AFDB69BD28D11BD9009D5CFE /* QuestionViewController.swift */,
+				AFDB69DE28D2697F009D5CFE /* SelectQuestionGroupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,7 +201,9 @@
 				AFDB69BA28D11BD9009D5CFE /* AppDelegate.swift in Sources */,
 				AFDB69DD28D121A0009D5CFE /* QuestionView.swift in Sources */,
 				AFDB69D728D11EAC009D5CFE /* QuestionGroupData.swift in Sources */,
+				AFDB69E128D26BC2009D5CFE /* QuestionGroupCell.swift in Sources */,
 				AFDB69D528D11E61009D5CFE /* QuestionGroup.swift in Sources */,
+				AFDB69DF28D2697F009D5CFE /* SelectQuestionGroupViewController.swift in Sources */,
 				AFDB69BC28D11BD9009D5CFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
