@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesignPatternRay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="QuestionView" customModule="DesignPatternRay" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prompt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQQ-cY-nbJ">
+                                <rect key="frame" x="0.0" y="107" width="390" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V45-6g-iuK">
+                                <rect key="frame" x="0.0" y="175" width="390" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxD-RM-0pC">
+                                <rect key="frame" x="0.0" y="253.66666666666666" width="390" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44w-oe-9Bj">
+                                <rect key="frame" x="32" y="645" width="104" height="94"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_circle_x"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J66-0Y-31W">
+                                <rect key="frame" x="74" y="747" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcY-bc-Z4s">
+                                <rect key="frame" x="254" y="645" width="104" height="94"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_circle_check"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkk-JL-4El">
+                                <rect key="frame" x="296" y="747" width="20" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QQQ-cY-nbJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="0NC-0Z-2F0"/>
+                            <constraint firstItem="QQQ-cY-nbJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3tf-PH-EEy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V45-6g-iuK" secondAttribute="trailing" id="6MC-gV-o48"/>
+                            <constraint firstItem="Lkk-JL-4El" firstAttribute="top" secondItem="YcY-bc-Z4s" secondAttribute="bottom" constant="8" id="HmN-pM-dTI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FxD-RM-0pC" secondAttribute="trailing" id="KDQ-Jn-rhz"/>
+                            <constraint firstItem="V45-6g-iuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rca-Qr-cM2"/>
+                            <constraint firstItem="Lkk-JL-4El" firstAttribute="centerX" secondItem="YcY-bc-Z4s" secondAttribute="centerX" id="Wl0-83-YWw"/>
+                            <constraint firstItem="FxD-RM-0pC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xd9-0i-ma7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J66-0Y-31W" secondAttribute="bottom" constant="24" id="cHp-jl-peF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YcY-bc-Z4s" secondAttribute="trailing" constant="32" id="gfE-TX-exj"/>
+                            <constraint firstItem="J66-0Y-31W" firstAttribute="centerX" secondItem="44w-oe-9Bj" secondAttribute="centerX" id="hw7-jB-ip5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QQQ-cY-nbJ" secondAttribute="trailing" id="n1s-nf-HGI"/>
+                            <constraint firstItem="FxD-RM-0pC" firstAttribute="top" secondItem="V45-6g-iuK" secondAttribute="bottom" constant="50" id="nPI-HW-RZz"/>
+                            <constraint firstItem="J66-0Y-31W" firstAttribute="top" secondItem="44w-oe-9Bj" secondAttribute="bottom" constant="8" id="pFv-My-lcE"/>
+                            <constraint firstItem="V45-6g-iuK" firstAttribute="top" secondItem="QQQ-cY-nbJ" secondAttribute="bottom" constant="8" id="sS1-LH-eN9"/>
+                            <constraint firstItem="44w-oe-9Bj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="uc1-Ae-Su9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lkk-JL-4El" secondAttribute="bottom" constant="24" id="ytL-um-hZj"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="answerLabel" destination="FxD-RM-0pC" id="GKB-F3-K5B"/>
+                            <outlet property="correctCountLabel" destination="Lkk-JL-4El" id="RRU-87-WCv"/>
+                            <outlet property="hintLabel" destination="V45-6g-iuK" id="iNe-ip-puD"/>
+                            <outlet property="incorrectCountLabel" destination="J66-0Y-31W" id="Zt5-L9-2b8"/>
+                            <outlet property="promptLabel" destination="QQQ-cY-nbJ" id="sb8-FG-eRX"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_circle_check" width="80" height="80"/>
+        <image name="ic_circle_x" width="80" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
