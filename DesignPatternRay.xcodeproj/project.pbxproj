@@ -22,6 +22,7 @@
 		AFDB69E428D375CC009D5CFE /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69E328D375CC009D5CFE /* QuestionStrategy.swift */; };
 		AFDB69E628D3770A009D5CFE /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69E528D3770A009D5CFE /* SequentialQuestionStrategy.swift */; };
 		AFDB69E828D378F4009D5CFE /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69E728D378F4009D5CFE /* RandomQuestionStrategy.swift */; };
+		AFDB69EA28D38E64009D5CFE /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69E928D38E64009D5CFE /* AppSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		AFDB69E328D375CC009D5CFE /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
 		AFDB69E528D3770A009D5CFE /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
 		AFDB69E728D378F4009D5CFE /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
+		AFDB69E928D38E64009D5CFE /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				AFDB69D628D11EAC009D5CFE /* QuestionGroupData.swift */,
 				AFDB69D228D11DE6009D5CFE /* Question.swift */,
 				AFDB69D428D11E61009D5CFE /* QuestionGroup.swift */,
+				AFDB69E928D38E64009D5CFE /* AppSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFDB69EA28D38E64009D5CFE /* AppSettings.swift in Sources */,
 				AFDB69BE28D11BD9009D5CFE /* QuestionViewController.swift in Sources */,
 				AFDB69D328D11DE6009D5CFE /* Question.swift in Sources */,
 				AFDB69BA28D11BD9009D5CFE /* AppDelegate.swift in Sources */,
