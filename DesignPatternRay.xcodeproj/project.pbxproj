@@ -19,6 +19,8 @@
 		AFDB69DD28D121A0009D5CFE /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69DC28D121A0009D5CFE /* QuestionView.swift */; };
 		AFDB69DF28D2697F009D5CFE /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69DE28D2697F009D5CFE /* SelectQuestionGroupViewController.swift */; };
 		AFDB69E128D26BC2009D5CFE /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69E028D26BC2009D5CFE /* QuestionGroupCell.swift */; };
+		AFDB69E428D375CC009D5CFE /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69E328D375CC009D5CFE /* QuestionStrategy.swift */; };
+		AFDB69E628D3770A009D5CFE /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69E528D3770A009D5CFE /* SequentialQuestionStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		AFDB69DC28D121A0009D5CFE /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		AFDB69DE28D2697F009D5CFE /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
 		AFDB69E028D26BC2009D5CFE /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
+		AFDB69E328D375CC009D5CFE /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
+		AFDB69E528D3770A009D5CFE /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 				AFDB69D028D11D10009D5CFE /* Controllers */,
 				AFDB69CE28D11D07009D5CFE /* Models */,
 				AFDB69D128D11D24009D5CFE /* Resources */,
+				AFDB69E228D3759C009D5CFE /* Strategies */,
 				AFDB69CF28D11D0B009D5CFE /* Views */,
 			);
 			path = DesignPatternRay;
@@ -123,6 +128,15 @@
 				AFDB69C728D11BDA009D5CFE /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFDB69E228D3759C009D5CFE /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				AFDB69E328D375CC009D5CFE /* QuestionStrategy.swift */,
+				AFDB69E528D3770A009D5CFE /* SequentialQuestionStrategy.swift */,
+			);
+			path = Strategies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +216,8 @@
 				AFDB69DD28D121A0009D5CFE /* QuestionView.swift in Sources */,
 				AFDB69D728D11EAC009D5CFE /* QuestionGroupData.swift in Sources */,
 				AFDB69E128D26BC2009D5CFE /* QuestionGroupCell.swift in Sources */,
+				AFDB69E628D3770A009D5CFE /* SequentialQuestionStrategy.swift in Sources */,
+				AFDB69E428D375CC009D5CFE /* QuestionStrategy.swift in Sources */,
 				AFDB69D528D11E61009D5CFE /* QuestionGroup.swift in Sources */,
 				AFDB69DF28D2697F009D5CFE /* SelectQuestionGroupViewController.swift in Sources */,
 				AFDB69BC28D11BD9009D5CFE /* SceneDelegate.swift in Sources */,
