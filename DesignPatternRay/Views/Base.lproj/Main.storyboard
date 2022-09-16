@@ -169,7 +169,13 @@
                             <constraint firstItem="Z6G-UT-ZVW" firstAttribute="trailing" secondItem="Z4G-Yp-1zU" secondAttribute="trailing" id="lSd-po-hjd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Question Group" id="Fv1-nr-W96"/>
+                    <navigationItem key="navigationItem" title="Select Question Group" id="Fv1-nr-W96">
+                        <barButtonItem key="leftBarButtonItem" image="ic_settings" id="2QD-mL-gky">
+                            <connections>
+                                <segue destination="h9J-Ud-Wc4" kind="show" id="vC9-56-Wpm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Z6G-UT-ZVW" id="Fh4-fe-QZz"/>
                     </connections>
@@ -177,6 +183,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewv-Re-Q74" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2286.1538461538462" y="44.7867298578199"/>
+        </scene>
+        <!--App Settings-->
+        <scene sceneID="cVy-FR-5sr">
+            <objects>
+                <tableViewController title="App Settings" id="h9J-Ud-Wc4" customClass="AppSettingsViewController" customModule="DesignPatternRay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="2xe-yI-LSQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="h9J-Ud-Wc4" id="RNF-7a-VTI"/>
+                            <outlet property="delegate" destination="h9J-Ud-Wc4" id="L0c-i5-BYL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="vAh-Xh-b18"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yho-qC-c3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2286" y="847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KFT-ak-6Nw">
@@ -200,6 +225,7 @@
     <resources>
         <image name="ic_circle_check" width="80" height="80"/>
         <image name="ic_circle_x" width="80" height="80"/>
+        <image name="ic_settings" width="26" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

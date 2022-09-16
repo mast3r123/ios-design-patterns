@@ -7,6 +7,31 @@
 
 import Foundation
 
+//MARK: - Question Strategy Type
+public enum QuestionStrategyType: Int, CaseIterable {
+    case random
+    case sequential
+    
+    //MARK: - Instance Methods
+    public func title() -> String {
+        switch self {
+        case .random:
+            return "Random"
+        case .sequential:
+            return "Sequential"
+        }
+    }
+    
+    public func questionStrategy(for questionGroup: QuestionGroup) -> QuestionStrategy {
+        switch self {
+        case .random:
+            return RandomQuestionStrategy(questionGroup: questionGroup)
+        case .sequential:
+            return SequentialQuestionStrategy(questionGroup: questionGroup)
+        }
+    }
+}
+
 public class AppSettings {
     //MARK: - Keys
     private struct Keys {
@@ -22,31 +47,6 @@ public class AppSettings {
     //MARK: - Instance Methods
     public func questionStrategy(for questionGroup: QuestionGroup) -> QuestionStrategy {
         return questionStrategyType.questionStrategy(for: questionGroup)
-    }
-    
-    //MARK: - Question Strategy Type
-    public enum QuestionStrategyType: Int, CaseIterable {
-        case random
-        case sequential
-        
-        //MARK: - Instance Methods
-        public func title() -> String {
-            switch self {
-            case .random:
-                return "Random"
-            case .sequential:
-                return "Sequential"
-            }
-        }
-        
-        public func questionStrategy(for questionGroup: QuestionGroup) -> QuestionStrategy {
-            switch self {
-            case .random:
-                return RandomQuestionStrategy(questionGroup: questionGroup)
-            case .sequential:
-                return SequentialQuestionStrategy(questionGroup: questionGroup)
-            }
-        }
     }
     
     //MARK: - Instance Properties

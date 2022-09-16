@@ -19,7 +19,7 @@ public class SelectQuestionGroupViewController: UIViewController {
     //MARK: - Properties
     public let questionGroups = QuestionGroup.allGroups()
     private var selectedQuestionGroup: QuestionGroup!
-    
+    private let appSettings = AppSettings.shared
     
 }
 
@@ -55,7 +55,7 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let viewController = segue.destination as? QuestionViewController else { return }
-        viewController.questionStragegy = RandomQuestionStrategy(questionGroup: selectedQuestionGroup)
+        viewController.questionStragegy = appSettings.questionStrategy(for: selectedQuestionGroup)
         viewController.delegate = self
     }
 }
