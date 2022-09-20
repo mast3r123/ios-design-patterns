@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AFD1355928DA493100E1DB9B /* DiskCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1355828DA493100E1DB9B /* DiskCaretaker.swift */; };
+		AFD1355B28DA4E4C00E1DB9B /* QuestionGroupCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1355A28DA4E4C00E1DB9B /* QuestionGroupCaretaker.swift */; };
+		AFD1355D28DA515700E1DB9B /* QuestionGroupData.json in Resources */ = {isa = PBXBuildFile; fileRef = AFD1355C28DA515700E1DB9B /* QuestionGroupData.json */; };
 		AFDB69BA28D11BD9009D5CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69B928D11BD9009D5CFE /* AppDelegate.swift */; };
 		AFDB69BC28D11BD9009D5CFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69BB28D11BD9009D5CFE /* SceneDelegate.swift */; };
 		AFDB69BE28D11BD9009D5CFE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69BD28D11BD9009D5CFE /* QuestionViewController.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		AFD1355828DA493100E1DB9B /* DiskCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCaretaker.swift; sourceTree = "<group>"; };
+		AFD1355A28DA4E4C00E1DB9B /* QuestionGroupCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCaretaker.swift; sourceTree = "<group>"; };
+		AFD1355C28DA515700E1DB9B /* QuestionGroupData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionGroupData.json; sourceTree = "<group>"; };
 		AFDB69B628D11BD9009D5CFE /* DesignPatternRay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternRay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDB69B928D11BD9009D5CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFDB69BB28D11BD9009D5CFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD1355828DA493100E1DB9B /* DiskCaretaker.swift */,
+				AFD1355A28DA4E4C00E1DB9B /* QuestionGroupCaretaker.swift */,
 			);
 			path = Caretakers;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			children = (
 				AFDB69D828D11EEC009D5CFE /* Assets.xcassets */,
 				AFDB69C728D11BDA009D5CFE /* Info.plist */,
+				AFD1355C28DA515700E1DB9B /* QuestionGroupData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFDB69DB28D11F93009D5CFE /* LaunchScreen.storyboard in Resources */,
+				AFD1355D28DA515700E1DB9B /* QuestionGroupData.json in Resources */,
 				AFDB69D928D11EEC009D5CFE /* Assets.xcassets in Resources */,
 				AFDB69C128D11BD9009D5CFE /* Main.storyboard in Resources */,
 			);
@@ -244,6 +251,7 @@
 				AFDB69EC28D4080D009D5CFE /* AppSettingsViewController.swift in Sources */,
 				AFDB69DF28D2697F009D5CFE /* SelectQuestionGroupViewController.swift in Sources */,
 				AFD1355928DA493100E1DB9B /* DiskCaretaker.swift in Sources */,
+				AFD1355B28DA4E4C00E1DB9B /* QuestionGroupCaretaker.swift in Sources */,
 				AFDB69BC28D11BD9009D5CFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
