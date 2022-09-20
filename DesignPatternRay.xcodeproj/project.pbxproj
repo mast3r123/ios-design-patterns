@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFD1355928DA493100E1DB9B /* DiskCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD1355828DA493100E1DB9B /* DiskCaretaker.swift */; };
 		AFDB69BA28D11BD9009D5CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69B928D11BD9009D5CFE /* AppDelegate.swift */; };
 		AFDB69BC28D11BD9009D5CFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69BB28D11BD9009D5CFE /* SceneDelegate.swift */; };
 		AFDB69BE28D11BD9009D5CFE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDB69BD28D11BD9009D5CFE /* QuestionViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AFD1355828DA493100E1DB9B /* DiskCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCaretaker.swift; sourceTree = "<group>"; };
 		AFDB69B628D11BD9009D5CFE /* DesignPatternRay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternRay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDB69B928D11BD9009D5CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFDB69BB28D11BD9009D5CFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFD1355728DA490600E1DB9B /* Caretakers */ = {
+			isa = PBXGroup;
+			children = (
+				AFD1355828DA493100E1DB9B /* DiskCaretaker.swift */,
+			);
+			path = Caretakers;
+			sourceTree = "<group>";
+		};
 		AFDB69AD28D11BD9009D5CFE = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				AFDB69CD28D11CEF009D5CFE /* AppDelegate */,
+				AFD1355728DA490600E1DB9B /* Caretakers */,
 				AFDB69D028D11D10009D5CFE /* Controllers */,
 				AFDB69CE28D11D07009D5CFE /* Models */,
 				AFDB69D128D11D24009D5CFE /* Resources */,
@@ -100,10 +111,10 @@
 		AFDB69CE28D11D07009D5CFE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AFDB69D628D11EAC009D5CFE /* QuestionGroupData.swift */,
+				AFDB69E928D38E64009D5CFE /* AppSettings.swift */,
 				AFDB69D228D11DE6009D5CFE /* Question.swift */,
 				AFDB69D428D11E61009D5CFE /* QuestionGroup.swift */,
-				AFDB69E928D38E64009D5CFE /* AppSettings.swift */,
+				AFDB69D628D11EAC009D5CFE /* QuestionGroupData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -122,9 +133,9 @@
 		AFDB69D028D11D10009D5CFE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AFDB69EB28D4080D009D5CFE /* AppSettingsViewController.swift */,
 				AFDB69BD28D11BD9009D5CFE /* QuestionViewController.swift */,
 				AFDB69DE28D2697F009D5CFE /* SelectQuestionGroupViewController.swift */,
-				AFDB69EB28D4080D009D5CFE /* AppSettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,8 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				AFDB69E328D375CC009D5CFE /* QuestionStrategy.swift */,
-				AFDB69E528D3770A009D5CFE /* SequentialQuestionStrategy.swift */,
 				AFDB69E728D378F4009D5CFE /* RandomQuestionStrategy.swift */,
+				AFDB69E528D3770A009D5CFE /* SequentialQuestionStrategy.swift */,
 			);
 			path = Strategies;
 			sourceTree = "<group>";
@@ -232,6 +243,7 @@
 				AFDB69D528D11E61009D5CFE /* QuestionGroup.swift in Sources */,
 				AFDB69EC28D4080D009D5CFE /* AppSettingsViewController.swift in Sources */,
 				AFDB69DF28D2697F009D5CFE /* SelectQuestionGroupViewController.swift in Sources */,
+				AFD1355928DA493100E1DB9B /* DiskCaretaker.swift in Sources */,
 				AFDB69BC28D11BD9009D5CFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
