@@ -97,10 +97,9 @@ public class QuestionViewController: UIViewController {
     }
     
     private func showNextQuestion() {
-        questionIndex += 1
-        guard questionIndex < questionGroup.questions.count else {
-            delegate?.questionViewController(self, didComplete: questionStragegy)
-            return
+        guard questionStragegy.advanceToNextQuestion() else {
+          delegate?.questionViewController(self, didComplete: questionStragegy)
+          return
         }
         showQuestion()
     }
